@@ -1,5 +1,5 @@
 {
-  "name": "express-api-template",
+  "name": "dummy-api",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -15,16 +15,12 @@
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
-    "jsonwebtoken": "^8.5.1",
     "morgan": "^1.10.0",
-    "mysql2": "^2.2.5",
-    "sequelize": "^6.6.4",
     "swagger-jsdoc": "^6.1.0",
     "swagger-ui-express": "^4.1.6"
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
     "nodemon": "^2.0.9",
-    "sequelize-cli": "^6.2.0"
   }
 }
