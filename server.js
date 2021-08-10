@@ -3,6 +3,7 @@ const express = require('express');
 const swaggerUi = require('swagger-ui-express');
 const swaggerSpecs = require('./src/config/swagger');
 const morgan = require('morgan');
+const cors = require('cors');
 const cookieParser = require('cookie-parser');
 const { responsehelpers } = require('./src/middlewares/helpers');
 const routes = require('./src/routes');
@@ -20,6 +21,7 @@ const app = express();
 
 // Middlewares
 app.use(responsehelpers);
+app.use(cors());
 app.use(morgan("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
